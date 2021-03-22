@@ -1,18 +1,7 @@
 ﻿  SimpleClient.cpp
-C:\Dev\Networking\NetCommon\net_connection.h(22,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Dev\Networking\NetCommon\net_connection.h(37): message : see reference to class template instantiation 'net::connection<T>' being compiled
-C:\Dev\Networking\NetCommon\net_connection.h(22,26): error C2143: syntax error: missing ',' before '<'
-C:\Dev\Networking\NetCommon\net_connection.h(32,11): error C2065: 'message': undeclared identifier
-C:\Dev\Networking\NetCommon\net_connection.h(32,3): error C2974: 'net::tsqueue': invalid template argument for 'T', type expected
-C:\Dev\Networking\NetCommon\net_tsqueue.h(8): message : see declaration of 'net::tsqueue'
-C:\Dev\Networking\NetCommon\net_connection.h(32,20): error C2059: syntax error: '>'
-C:\Dev\Networking\NetCommon\net_connection.h(32,1): error C2238: unexpected token(s) preceding ';'
-C:\Dev\Networking\NetCommon\net_connection.h(35,11): error C2065: 'owned_message': undeclared identifier
-C:\Dev\Networking\NetCommon\net_connection.h(35,3): error C2974: 'net::tsqueue': invalid template argument for 'T', type expected
-C:\Dev\Networking\NetCommon\net_tsqueue.h(8): message : see declaration of 'net::tsqueue'
-C:\Dev\Networking\NetCommon\net_connection.h(35,26): error C2059: syntax error: '>'
-C:\Dev\Networking\NetCommon\net_connection.h(35,1): error C2238: unexpected token(s) preceding ';'
-C:\Dev\Networking\NetCommon\net_client.h(31,5): error C3861: 'm_endpoints': identifier not found
-C:\Dev\Networking\NetCommon\net_client.h(98): message : see reference to class template instantiation 'net::client_interface<T>' being compiled
-C:\Dev\Networking\NetCommon\net_client.h(34,35): error C3861: 'm_endpoints': identifier not found
-C:\Dev\Networking\NetClient\SimpleClient.cpp(17,3): error C3861: 'Send': identifier not found
+C:\Dev\Networking\NetCommon\net_message.h(81,20): error C2065: 'connection': undeclared identifier
+C:\Dev\Networking\NetCommon\net_message.h(90): message : see reference to class template instantiation 'peanut::net::owned_message<T>' being compiled
+C:\Dev\Networking\NetCommon\net_message.h(81,9): error C2974: 'std::shared_ptr': invalid template argument for '_Ty', type expected
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(1659): message : see declaration of 'std::shared_ptr'
+C:\Dev\Networking\NetCommon\net_message.h(81,32): error C2059: syntax error: '>'
+C:\Dev\Networking\NetCommon\net_message.h(81,1): error C2238: unexpected token(s) preceding ';'

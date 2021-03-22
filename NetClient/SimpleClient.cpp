@@ -7,11 +7,11 @@ enum class CustomMsgTypes : uint32_t
 	MovePlayer
 };
 
-class CustomClient : public net::client_interface <CustomMsgTypes>
+class CustomClient : public peanut::net::client_interface <CustomMsgTypes>
 {
 public:
 	bool CastSpell(float x, float y) {
-		net::message<CustomMsgTypes> msg;
+		peanut::net::message<CustomMsgTypes> msg;
 		msg.header.id = CustomMsgTypes::CastSpell;
 		msg << x << y;
 		Send(msg);
